@@ -17,9 +17,20 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
+.controller('PlayersCtrl', function($scope, $http, FantasyPlayers) {
+  FantasyPlayers.all().then(function(players) {
+  $scope.players = players;  
+  });
+  $scope.remove = function(players) {
+    FantasyPlayers.remove(players);
+      };
+  })
+
+  .controller('ViewPlayerDetailsCtrl', function($scope, $stateParams, $http, FantasyPlayers) {
+
+      $scope.playerDetails = FantasyPlayers.get($stateParams.PlayerID);
+
+  })
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
