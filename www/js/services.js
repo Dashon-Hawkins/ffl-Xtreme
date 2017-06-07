@@ -48,24 +48,12 @@ angular.module('starter.services', []).factory('Chats', function() {
     }
   }
 })
-//
-// .service('FantasyPlayers', function($http) {
-//   const players = [];
-//   this.getPlayersByTeam = function () {
-//     $http({
-//       method: "GET",
-//       url: 'https://api.fantasydata.net/nfl/v2/JSON/FantasyPlayers',
-//       headers: {
-//         'Ocp-Apim-Subscription-Key': '290f5b6b95c548dea8334aa163b8a525',
-//       },
-//     }).then(function(response){
-//       console.log(response);
-//     })
-//   }
-//   this.getPlayersByTeam('NO')
-// })
+
   .factory('FantasyPlayers', function($http) {
   var players = [];
+  // when a user clicks on the button next to the player, he is added to  my_team ( study the Reddit clone for clues on how to do this. )
+  // when you visit the "my team" page, you should see a list of everyone added to the team already. 
+  var my_team = [];
 
   return {
     players: players,

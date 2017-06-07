@@ -19,7 +19,7 @@ angular.module('starter.controllers', [])
 
 .controller('PlayersCtrl', function($scope, $http, FantasyPlayers) {
   FantasyPlayers.all().then(function(players) {
-  $scope.players = players;  
+    $scope.players = players;  
   });
   $scope.remove = function(players) {
     FantasyPlayers.remove(players);

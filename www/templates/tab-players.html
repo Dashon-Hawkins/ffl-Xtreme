@@ -1,7 +1,9 @@
 <ion-view view-title="Account">
   <ion-content>
   <div class="players" ng-repeat="player in players">
-    {{player}}
+    <div class="players" ng-repeat="individual in player" | sortby: "Position" >
+      {{individual.Name}} |   {{individual.Team}} |   {{individual.Position}} |  {{individual.ProjectedFantasyPoints}}
+   </div>
   </div>
   </ion-content>
 </ion-view>
