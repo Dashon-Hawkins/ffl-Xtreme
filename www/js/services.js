@@ -58,7 +58,7 @@ angular.module('starter.services', []).factory('Chats', function() {
   return {
     players: players,
     all: function() {
-      return $http.get('https://api.fantasydata.net/nfl/v2/JSON/FantasyPlayers', {
+      return $http.get('https://api.fantasydata.net/nfl/v2/JSON/Players', {
         headers: {
           'Ocp-Apim-Subscription-Key': '290f5b6b95c548dea8334aa163b8a525'
         }
