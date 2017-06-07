@@ -50,10 +50,10 @@ angular.module('starter.services', []).factory('Chats', function() {
 })
 
   .factory('FantasyPlayers', function($http) {
-  var players = [];
+  const players = [];
   // when a user clicks on the button next to the player, he is added to  my_team ( study the Reddit clone for clues on how to do this. )
-  // when you visit the "my team" page, you should see a list of everyone added to the team already. 
-  var my_team = [];
+  // when you visit the "my team" page, you should see a list of everyone added to the team already.
+  const my_team = [];
 
   return {
     players: players,
@@ -75,5 +75,25 @@ angular.module('starter.services', []).factory('Chats', function() {
       }
       return null;
     }
+
+//   .factory('FantasyPlayers', function($http) {
+//     var options = {
+//   timeout: 15000, // Service call timeout
+//
+//   nfl: {
+//     version: 'nfl/v2',
+//     key: '290f5b6b95c548dea8334aa163b8a525' // <-- Pass in your nfl key here
+//   }
+//
+//   var fantasyData = require ('https://api.fantasydata.net/nfl/v2/JSON/Players'),(nfl: {
+//     version: 'nfl/v2',
+//     key: '290f5b6b95c548dea8334aa163b8a525' // <-- Pass in your nfl key here
+//   });
+//
+//     var season = '2017';
+//     fantasyData.nfl.Byes(PlayerID, PhotoUrl, Name, Age, Team, Number, FantasyPosition, Active, HeightFeet, HeightInches, College, AverageDraftPosition, ExperienceString, ByeWeek, UpcomingGameOpponent function(err, results) {
+//   console.log(JSON.stringify(results, null, 100));
+// });
+
   };
 });

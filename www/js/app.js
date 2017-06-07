@@ -89,6 +89,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+    .state('tab.myTeam', {
+      url: '/myTeam',
+      views: {
+        'tab-myTeam': {
+          templateUrl: 'templates/tab-myTeam.html',
+          controller: 'PlayersCtrl'
+        }
+      }
+    })
+
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
 
