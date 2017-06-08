@@ -1,6 +1,16 @@
-angular.module('fflx.common.directives', [])
+angular.module('fflx.common.directives', ['ionic',
+'fflx.common.directives',
+'fflx.app.services',
+'fflx.app.filters',
+'fflx.app.controllers',
+'fflx.auth.controllers',
+'fflx.views',
+'underscore',
+'angularMoment',
+'ngCordova',
+'monospaced.elastic'])
 
-.directive('multiBg', function(_){
+.directive('multiBg', function(_) {
 	return {
 		scope: {
 			multiBg: '=',
@@ -12,7 +22,7 @@ angular.module('fflx.common.directives', [])
 			var utils = this;
 
 			this.animateBg = function(){
-				// Think i have to use apply because this function is not called from this controller ($scope)
+				// Think I have to use apply because this function is not called from this controller ($scope)
 				$scope.$apply(function () {
 					$scope.loaded = true;
 					$element.css({'background-image': 'url(' + $scope.bg_img + ')'});

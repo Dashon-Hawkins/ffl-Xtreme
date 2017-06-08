@@ -1,4 +1,14 @@
-angular.module('fflx.auth.controllers', [])
+angular.module('fflx.auth.controllers', ['ionic',
+'fflx.common.directives',
+'fflx.app.services',
+'fflx.app.filters',
+'fflx.app.controllers',
+'fflx.auth.controllers',
+'fflx.views',
+'underscore',
+'angularMoment',
+'ngCordova',
+'monospaced.elastic'])
 
 
 .controller('WelcomeCtrl', function($scope, $state, $ionicModal){

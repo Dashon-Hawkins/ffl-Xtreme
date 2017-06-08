@@ -1,4 +1,14 @@
-angular.module('fflx.app.controllers', [])
+angular.module('fflx.app.controllers', ['ionic',
+'fflx.common.directives',
+'fflx.app.services',
+'fflx.app.filters',
+'fflx.app.controllers',
+'fflx.auth.controllers',
+'fflx.views',
+'underscore',
+'angularMoment',
+'ngCordova',
+'monospaced.elastic'])
 
 .controller('DashCtrl', function($scope) {})
 

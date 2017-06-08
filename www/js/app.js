@@ -8,24 +8,39 @@
 
 //I substituted 'fflx' for 'starter' in the js files ONLY not the Node Modules
 
-angular.module('underscore', [])
-.factory('_', function() {
-  return window._; // assumes underscore has already been loaded on the page
-});
+// angular.module('underscore', ['ionic',
+// 'starter.common.directives',
+// 'starter.app.services',
+// 'starter.app.filters',
+// 'starter.app.controllers',
+// 'starter.auth.controllers',
+// 'starter.views',
+// 'underscore',
+// 'angularMoment',
+// 'ngCordova',
+// 'monospaced.elastic'])
 
-angular.module('fflx', [
+// .factory('_', function() {
+//   return window._; // assumes underscore has already been loaded on the page
+// });
+
+
+angular.module('fflxApp', [
   'ionic',
-  'fflx.common.directives',
-  'fflx.app.services',
-  'fflx.app.filters',
-  'fflx.app.controllers',
-  'fflx.auth.controllers',
-  'fflx.views',
+  'fflxApp.common.directives',
+  'fflxApp.app.services',
+  'fflxApp.app.filters',
+  'fflxApp.app.controllers',
+  'fflxApp.auth.controllers',
+  'fflxApp.views',
   'underscore',
   'angularMoment',
   'ngCordova',
-  'monospaced.elastic'
-])
+  'monospaced.elastic'])
+
+.factory('_', function() {
+  return window._; // assumes underscore has already been loaded on the page
+});
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -294,7 +309,7 @@ angular.module('fflx', [
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/facebook-sign-in');
-});
+})
 
 
 //Previous set of states using tab template in Ionic
