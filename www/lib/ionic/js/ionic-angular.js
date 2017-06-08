@@ -11757,7 +11757,7 @@ IonicModule
  * @usage
  *
  * ```html
- * <body ng-app="starter">
+ * <body ng-app="fflx">
  *   <!-- The nav bar that will be updated as we navigate -->
  *   <ion-nav-bar class="bar-positive">
  *   </ion-nav-bar>
