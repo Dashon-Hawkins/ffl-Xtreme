@@ -1,14 +1,4 @@
-angular.module('fflx.app.services', ['ionic',
-'fflx.common.directives',
-'fflx.app.services',
-'fflx.app.filters',
-'fflx.app.controllers',
-'fflx.auth.controllers',
-'fflx.views',
-'underscore',
-'angularMoment',
-'ngCordova',
-'monospaced.elastic'])
+angular.module('fflxApp.app.services', [])
 
 .service('AuthService', function ($http, $q){
   //Just for example purposes user with id=0 will represent our logged user

@@ -1,14 +1,4 @@
-angular.module('fflx.app.controllers', ['ionic',
-'fflx.common.directives',
-'fflx.app.services',
-'fflx.app.filters',
-'fflx.app.controllers',
-'fflx.auth.controllers',
-'fflx.views',
-'underscore',
-'angularMoment',
-'ngCordova',
-'monospaced.elastic'])
+angular.module('fflxApp.app.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
@@ -50,9 +40,7 @@ angular.module('fflx.app.controllers', ['ionic',
 
 
   };
-});
-
-
+})
 
 .controller('ProfileCtrl', function($scope, $ionicHistory, $state, $ionicScrollDelegate, loggedUser, user, followers, following, posts, pictures) {
   $scope.$on('$ionicView.afterEnter', function() {

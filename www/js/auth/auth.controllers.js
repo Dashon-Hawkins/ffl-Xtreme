@@ -1,18 +1,8 @@
-angular.module('fflx.auth.controllers', ['ionic',
-'fflx.common.directives',
-'fflx.app.services',
-'fflx.app.filters',
-'fflx.app.controllers',
-'fflx.auth.controllers',
-'fflx.views',
-'underscore',
-'angularMoment',
-'ngCordova',
-'monospaced.elastic'])
+angular.module('fflxApp.auth.controllers', [])
 
 
 .controller('WelcomeCtrl', function($scope, $state, $ionicModal){
-	$scope.bgs = ["img/welcome-bg.jpg"];
+	$scope.bgs = ["img/FantasyFootballTeams.jpg"];
 
 	$scope.facebookSignIn = function(){
 		console.log("doing facebook sign in");

@@ -1,14 +1,4 @@
-angular.module('fflx.app.filters', ['ionic',
-'fflx.common.directives',
-'fflx.app.services',
-'fflx.app.filters',
-'fflx.app.controllers',
-'fflx.auth.controllers',
-'fflx.views',
-'underscore',
-'angularMoment',
-'ngCordova',
-'monospaced.elastic'])
+angular.module('fflxApp.app.filters', [])
 
 .filter('cleanUrl',function() {
   return function(url) {

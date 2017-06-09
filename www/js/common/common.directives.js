@@ -1,14 +1,4 @@
-angular.module('fflx.common.directives', ['ionic',
-'fflx.common.directives',
-'fflx.app.services',
-'fflx.app.filters',
-'fflx.app.controllers',
-'fflx.auth.controllers',
-'fflx.views',
-'underscore',
-'angularMoment',
-'ngCordova',
-'monospaced.elastic'])
+angular.module('fflxApp.common.directives', [])
 
 .directive('multiBg', function(_) {
 	return {
