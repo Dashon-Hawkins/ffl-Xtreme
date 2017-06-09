@@ -6,7 +6,7 @@ angular.module('fflxApp.auth.controllers', [])
 
 	$scope.facebookSignIn = function(){
 		console.log("doing facebook sign in");
-		$state.go('app.feed');
+		$state.go('app.players');
 	};
 
 	$ionicModal.fromTemplateUrl('views/app/legal/privacy-policy.html', {
@@ -35,13 +35,13 @@ angular.module('fflxApp.auth.controllers', [])
 .controller('CreateAccountCtrl', function($scope, $state){
 	$scope.doSignUp = function(){
 		console.log("doing sign up");
-		$state.go('app.feed');
+		$state.go('app.players');
 	};
 })
 
 .controller('WelcomeBackCtrl', function($scope, $state, $ionicModal){
 	$scope.doLogIn = function(){
-		console.log("doing log in");
+		console.log("Doing log in");
 		$state.go('app.feed');
 	};
 

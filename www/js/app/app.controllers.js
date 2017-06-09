@@ -371,9 +371,9 @@ angular.module('fflxApp.app.controllers', [])
         // is available
         console.log("Is available");
         $cordovaEmailComposer.open({
-          to: 'hi@startapplabs.com',
+          to: 'dashon.hawkins@gmail.com',
           subject: 'Nice Theme!',
-          body: 'How are you? Nice greetings from Social App'
+          body: 'How are you? Nice greetings from FFL App'
         }).then(null, function () {
           // user cancelled email
         });

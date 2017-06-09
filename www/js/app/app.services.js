@@ -79,7 +79,9 @@ angular.module('fflxApp.app.services', [])
         headers: {
           'Ocp-Apim-Subscription-Key': '290f5b6b95c548dea8334aa163b8a525'
         }
-      }).then(function(response) {
+      })
+
+      .then(function(response) {
         var payload = response.data;
         var myData = [];
 
@@ -223,7 +225,7 @@ angular.module('fflxApp.app.services', [])
 
   this.getFeed = function(page){
 
-    var pageSize = 5, // set your page size, which is number of records per page
+    var pageSize = 7, // set your page size, which is number of records per page
         skip = pageSize * (page-1),
         totalPosts = 1,
         totalPages = 1,
@@ -255,7 +257,7 @@ angular.module('fflxApp.app.services', [])
 
   this.getFeedByCategory = function(page, categoryId){
 
-    var pageSize = 5, // set your page size, which is number of records per page
+    var pageSize = 7, // set your page size, which is number of records per page
         skip = pageSize * (page-1),
         totalPosts = 1,
         totalPages = 1,
@@ -417,7 +419,7 @@ angular.module('fflxApp.app.services', [])
   this.getTrends = function(){
     var dfd = $q.defer();
 
-    $http.get('database.json').success(function(database) {
+    $http.get(' https://newsapi.org/v1/articles?source=nfl-news&sortBy=top&apiKey=54a35bab75aa4934b6efa871e328c2da').success(function(database) {
       dfd.resolve(database.trends);
     });
 
@@ -427,7 +429,7 @@ angular.module('fflxApp.app.services', [])
   this.getTrend = function(trendId){
     var dfd = $q.defer();
 
-    $http.get('database.json').success(function(database) {
+    $http.get(' https://newsapi.org/v1/articles?source=nfl-news&sortBy=top&apiKey=54a35bab75aa4934b6efa871e328c2da').success(function(database) {
       var trend = _.find(database.trends, function(trend){ return trend.id == trendId; });
       dfd.resolve(trend);
     });

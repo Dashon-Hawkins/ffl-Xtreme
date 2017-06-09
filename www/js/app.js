@@ -89,6 +89,21 @@ angular.module('fflxApp', [
       }
     }
   })
+  .state('app.players', {
+    url: "/players",
+    views: {
+      'menuContent': {
+        templateUrl: "views/app/players.html",
+        controller: "PlayersCtrl"
+      }
+    },
+    resolve: {
+      loggedUser: function(AuthService){
+        return AuthService.getLoggedUser();
+      }
+    }
+  })
+
 
   .state('app.category_feed', {
     url: "/category_feed/:categoryId",
@@ -308,7 +323,7 @@ angular.module('fflxApp', [
 
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/facebook-sign-in');
+  $urlRouterProvider.otherwise('/welcome-back');
 })
 
 
@@ -369,17 +384,11 @@ angular.module('fflxApp', [
 //       }
 //     }
 //   })
+// //
+
+
 //
-//     .state('tab.players', {
-//       url: '/players',
-//       views: {
-//         'tab-players': {
-//           templateUrl: 'views/players/tab-players.html',
-//           controller: 'PlayersCtrl'
-//         }
-//       }
-//     })
-//
+
 //     .state('tab.myTeam', {
 //       url: '/myTeam',
 //       views: {
