@@ -32,7 +32,7 @@ angular.module('fflxApp', [
   'fflxApp.app.filters',
   'fflxApp.app.controllers',
   'fflxApp.auth.controllers',
-  'fflxApp.views',
+  'fflx.views',
   // 'underscore',
   'angularMoment',
   'ngCordova',
@@ -365,6 +365,7 @@ angular.module('fflxApp', [
 //         }
 //       }
 //     })
+
 //     .state('tab.chat-detail', {
 //       url: '/views/chats/:chatId',
 //       views: {

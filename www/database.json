@@ -1,34 +1,34 @@
 {
   "feed_pictures": [
     {
-      "image": "img/sample_images/1.jpeg"
+      "image": "img/auth/AmazingCatchBechamJr.jpg"
     },
     {
-      "image": "img/sample_images/2.jpeg"
+      "image": "img/auth/CamNewtonFire.jpg"
     },
     {
-      "image": "img/sample_images/3.jpeg"
+      "image": "img/auth/DolphinsStiffArm.jpg"
     },
     {
-      "image": "img/sample_images/4.jpeg"
+      "image": "img/auth/TopQB's.jpg"
     },
     {
-      "image": "img/sample_images/5.jpeg"
+      "image": "img/auth/JJ_WattTexans.jpg"
     },
     {
-      "image": "img/sample_images/6.jpeg"
+      "image": "img/auth/TopWRs.jpg"
     },
     {
-      "image": "img/sample_images/7.jpeg"
+      "image": "img/auth/GaryBarnidgeBrowns.jpg"
     },
     {
-      "image": "img/sample_images/8.jpeg"
+      "image": "img/auth/TopCornerbacks.jpg"
     },
     {
-      "image": "img/sample_images/9.jpeg"
+      "image": "www/img/auth/TyrannMathieuAZ.jpg"
     },
     {
-      "image": "img/sample_images/10.jpeg"
+      "image": "img/auth/FutureRBsNFL.jpg"
     }
   ],
   "users_profile_pictures": [
@@ -65,7 +65,7 @@
       },
       "username": "aSnyder",
       "picture": "img/sample_images/people/1.jpg",
-      "about": "Velit esse deserunt eu proident sint occaecat est mollit et eu tempor.",
+      "about": "I really hate that smug look on Tom Brady's face! :(",
       "email": "alex.snyder@gmail.com",
       "website": "http://www.google.com"
     },
@@ -77,7 +77,7 @@
       },
       "username": "bWillis",
       "picture": "img/sample_images/people/2.jpg",
-      "about": "Fugiat voluptate ipsum laborum dolore consectetur sint mollit veniam minim do officia qui aliqua.",
+      "about": "David Johnson of the AZ Cards is a fantasy stud!!! #ImJustSaying.",
       "email": "blain.willis@gmail.com",
       "website": "http://www.google.com"
     },
@@ -89,7 +89,7 @@
       },
       "username": "gBentley",
       "picture": "img/sample_images/people/3.jpg",
-      "about": "Do aliqua nisi eiusmod minim aute consectetur.",
+      "about": "The Saints may be on to something big here. This may be the same formula that made them Super Bowl Champs.",
       "email": "garrett.bentley@gmail.com",
       "website": "http://www.google.com"
     },
@@ -101,7 +101,7 @@
       },
       "username": "gMcfarland",
       "picture": "img/sample_images/people/4.jpg",
-      "about": "Aute nisi minim sunt minim voluptate consectetur occaecat anim et.",
+      "about": "Prescott and Elliot are not going to do as well this year because teams now have film on them. #CowboysOnADiet",
       "email": "geri.mcfarland@gmail.com",
       "website": "http://www.google.com"
     },
