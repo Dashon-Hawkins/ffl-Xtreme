@@ -1,0 +1,31 @@
+<ion-view view-title="MyTeam">
+  <ion-content>
+    <ion-list>
+      <ion-item-sliding>
+  <div class="players" ng-repeat="player in players">
+    <div class="players" ng-repeat="individual in player" | sortby: "Position" >
+
+    <ion-item>
+      <ion-avatar item-start> {{individual.PhotoUrl}} </ion-avatar>
+      <h2>{{individual.Name}} | {{individual.Team}} | {{individual.Position}} | {{individual.ProjectedFantasyPoints}}  (Projected Fantasy Points) </h2>
+    </ion-item>
+    <ion-item-options side="left">
+      <button ion-button color="primary">
+        <ion-icon name="addPlayer"></ion-icon>
+        Add
+      </button>
+      <button ion-button color="secondary">
+        <ion-icon name="playerDetails"></ion-icon>
+        Stats
+      </button>
+    </ion-item-options>
+    <ion-item-options side="right">
+      <button ion-button color="primary">
+        <ion-icon name="delete"></ion-icon>
+        Delete
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+  </ion-content>
+</ion-view>

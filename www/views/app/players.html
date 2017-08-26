@@ -1,0 +1,18 @@
+<ion-view class="players-view" view-title="Players">
+  <ion-content>
+    <ion-list can-swipe="true">
+      <ion-item class="item item-avatar players" collection-repeat="player in players" | sortby: "AverageDraftPosition">
+        <img ng-src="{{player.PhotoUrl}}">
+        <p>
+          {{player.Name}} | {{player.Team}} | {{player.FantasyPosition}} |  {{player.AverageDraftPosition}} (Avg FFLX Draft Rank)
+        </p>
+        <ion-option-button class="button-primary" ng-click="share(item)">
+          Add
+        </ion-option-button>
+        <ion-option-button class="button-secondary" ng-click="share(item)">
+          Stats
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
